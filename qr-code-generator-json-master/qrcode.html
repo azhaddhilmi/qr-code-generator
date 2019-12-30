@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <form onsubmit="generateQR(event)">
+        <label for="event">Event Name</label>
+        <input type="text" name="event" id="event" required>
+        
+        <label for="category">Category</label>
+        
+        <select type="text" name="category" id="category" required>
+            <option value="College">Residential College</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Club">Club</option>
+            <option value="University">University</option>
+             </select>
+       
+             <label for="date">Date</label>
+        <input type="date" name="date" id="date" required>
+        
+
+
+        <label for="point">Point</label>
+        <input type="number" name="point" id="point" required>
+        
+        <button type="submit">Generate</button>
+    </form>
+    <div id="qrcode"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="jquery-qrcode/jquery.qrcode.min.js"></script>
+    <!-- <script src="jquery-qrcode/src/jquery.qrcode.js"></script> -->
+    <script src="generator.js"></script>
+    <!-- <script>
+        $('#qrcode').qrcode("Test");
+    </script> -->
+</body>
+</html>
